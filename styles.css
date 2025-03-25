@@ -448,3 +448,298 @@ nav {
   color: var(--text-light);
 }
 
+.footer {
+  background-color: var(--secondary-color);
+  border-top: 5px solid black;
+}
+
+.footer__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__logo a {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.footer__logo img {
+  max-width: 40px;
+}
+
+.footer__col p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  border-radius: 100%;
+  border: 1px solid var(--text-light);
+}
+
+.footer__socials a:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer__col h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.footer__links a {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+@media (width > 480px) {
+  .class__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  .trainer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .trainer__card:nth-child(3) {
+    grid-area: 2/2/3/3;
+  }
+
+  .price__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 2rem 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .header__container {
+    padding-block: 0;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .header__content {
+    padding-block: 5rem;
+    grid-area: 1/1/2/2;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__grid {
+    gap: 3rem;
+  }
+
+  .class__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .trainer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trainer__card:nth-child(3) {
+    grid-area: unset;
+  }
+
+  .trainer__content {
+    padding: 2rem;
+  }
+
+  .price__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__col:first-child {
+    grid-column: 1/1;
+  }
+}
+
+@media (width > 1024px) {
+  .class__grid {
+    gap: 2rem;
+  }
+
+  .price__grid {
+    gap: 2rem;
+  }
+
+  .price__card {
+    padding: 2rem;
+  }
+}
+
+
+.bmi-calculator {
+  max-width: 400px;
+  margin: 0px auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid grey;
+}
+
+.bmi-calculator h2 {
+  color: #333;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .bmi-calculator {
+      padding: 15px;
+  }
+}
+
+.contact__container {
+  margin: 20px auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 400px; 
+  width: 90%; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input {
+  padding: 10px; 
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; 
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact__container {
+      padding: 15px; 
+  }
+
+  .contact-form input,
+  .contact-form button {
+      font-size: 14px;
+  }
+}
