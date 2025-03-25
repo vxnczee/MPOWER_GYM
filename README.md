@@ -1,1 +1,0 @@
-# MPOWER_GYM
