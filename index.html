@@ -347,7 +347,66 @@
       </div>
     </section>
 
-    
+    <!-- Footer -->
+
+
+    <footer class="footer" id="foot">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" />Power</a>
+          </div>
+          <p>
+            Tedd meg az első lépést egy egészségesebb, erősebb éned felé verhetetlen árazási csomagjainkkal. Itt az idő, hogy izzadjunk, elérjük céljainkat és együtt győzzünk! 💪
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer__col">
+          <div class="bmi-calculator">
+            <h2>BMI Kalkulátor</h2>
+            <p>Kérjük, add meg a súlyodat, magasságodat és életkorodat a BMI kiszámításához.</p>
+            <div class="input-container">
+                <label for="weight">Súly (kg):</label>
+                <input type="number" id="weight" required />
+            </div>
+            <div class="input-container">
+                <label for="height">Magasság (cm):</label>
+                <input type="number" id="height" required />
+            </div>
+            <div class="input-container">
+                <label for="age">Kor (év):</label>
+                <input type="number" id="age" required />
+            </div>
+            <button id="calculate-btn">Kiszámít</button>
+            <div id="result"></div>
+        </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="contact__container">
+            <h2 class="section__header">Kapcsolat</h2>
+            <p class="section__description">
+              Kérjük, töltsd ki az alábbi űrlapot, és hamarosan felvesszük veled a kapcsolatot.
+            </p>
+            <form id="contact-form" class="contact-form">
+              <label for="name">Név:</label>
+              <input type="text" id="name" placeholder="Írd be a neved" required />
+            
+              <label for="email">Email cím:</label>
+              <input type="email" id="email" placeholder="Írd be az email címed" required />
+            
+              <button type="submit">Küldés</button>
+            </form>
+            <div id="form-result"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
 
 <script src="https://unpkg.com/scrollreveal"></script>
