@@ -232,3 +232,50 @@ nav {
 .about__card p {
   color: var(--text-light);
 }
+
+.class__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.class__card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.class__card .class__bg {
+  position: absolute;
+  max-width: 175px;
+  top: -3rem;
+  right: -1rem;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.class__card:hover .class__bg {
+  opacity: 0.5;
+}
+
+.class__card:hover {
+  transform: translateY(-10px);
+}
+
+.class__content {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.class__content h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
